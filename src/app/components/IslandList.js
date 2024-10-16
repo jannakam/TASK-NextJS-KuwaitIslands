@@ -2,8 +2,8 @@
 
 import Island from "./Island";
 
-function IslandList({ islands }) {
-  const islandCards = islands.map((island) => <Island key={island.id} island={island} />);
+function IslandList({ islands, handleIslandChange }) {
+  const islandCards = islands.map((island) => <Island key={island.id} island={island} handleIslandChange={handleIslandChange}/>);
 
   return (
 
